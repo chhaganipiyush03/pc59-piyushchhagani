@@ -2,7 +2,7 @@
     <x-slot:title>Contact</x-slot>
 
     <div class="container mx-auto p-6">
-        <h1 class="text-2xl font-bold mb-4">{{ __('Contact  At') }}</h1>
+        <h1 class="mt-4 text-base leading-loose text-gray-600">{{ __('Contact  At') }}</h1>
 
         @if (session('success'))
             <div class="mb-4 p-2 text-green-600">
@@ -12,8 +12,8 @@
         <p class="mt-4 text-base leading-loose text-gray-600">
                 Email:chhaganipk@rknec.edu,
                       chhaganipiyush@gmail.com
-              <p>Phone:   8770565984</p> 
-              <p> Add:SINDHI COLONY,M.L.B. WARD,, SEONI, M.P.</p> 
+              <p class="mt-4 text-base leading-loose text-gray-600">Phone:   8770565984</p> 
+              <p class="mt-4 text-base leading-loose text-gray-600"> Add:SINDHI COLONY,M.L.B. WARD,, SEONI, M.P.</p> 
              
              
               </div>
