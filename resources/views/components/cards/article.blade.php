@@ -11,7 +11,7 @@ class="py-8 sm:flex lg:flex-col xl:flex-row xl:items-center"
     class="group aspect-h-9 aspect-w-16 relative z-10 animate-pulse overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800"
     >
     <img
-        data-src="images/featured-article-01.jpeg"
+        data-src="images/explore.jpeg"
         class="lazy rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
     />
     </div>
@@ -22,13 +22,13 @@ class="py-8 sm:flex lg:flex-col xl:flex-row xl:items-center"
     class="order-1 mt-5 w-full px-2 sm:mt-0 sm:max-w-sm sm:pl-0 sm:pr-5 lg:order-2 lg:mt-4 xl:ml-5 xl:mt-0 xl:flex-1"
 >
     <a
-    href="{{ url('/projects/'.Str::of($article['category'])->lower()) }}"
+    href="{{ url('/about'.Str::of($article['category'])->lower()) }}"
     class="transition-color text-xs font-medium uppercase tracking-widest text-red-700 dark:text-red-300 duration-300 ease-in-out hover:text-red-600 dark:hover:text-red-200"
     >
     {{ __($article['category']) }}
     </a>
 
-    <a href="{{ url('/blog/' . $id) }}">
+    <a href="{{ url('/about' . $id) }}">
     <h3
         class="mt-2 text-xl font-medium leading-normal tracking-normal text-gray-900 dark:text-gray-100 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline"
     >
@@ -46,7 +46,7 @@ class="py-8 sm:flex lg:flex-col xl:flex-row xl:items-center"
         >
         <img
             class="lazy h-6 w-6 flex-shrink-0 rounded-lg object-cover object-center opacity-0 transition duration-300 ease-in-out"
-            data-src="images/author.jpeg"
+            data-src="images/photo.jpeg"
             alt="Author 01"
         />
         </a>
@@ -54,7 +54,7 @@ class="py-8 sm:flex lg:flex-col xl:flex-row xl:items-center"
         <span class="text-gray-500">By </span>
         <a
             class="font-medium text-gray-700 dark:text-gray-200 hover:underline"
-            href="{{ url('/blog') }}"
+            href="{{ url('/about') }}"
             >{{ __(config('info.sitename'))}}</a
         >
         <span class="text-gray-500 lg:hidden xl:inline-block">

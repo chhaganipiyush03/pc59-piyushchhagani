@@ -7,7 +7,7 @@
         class="group aspect-h-9 aspect-w-16 relative z-10 block animate-pulse overflow-hidden rounded-2xl bg-gray-50 dark:bg-gray-900 md:aspect-h-1 md:aspect-w-1"
       >
         <img
-          data-src="{{ asset('images/.jpeg') }}"
+          data-src="{{ asset('images/explore.jpeg') }}"
           class="lazy rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110"
         />
       </a>
@@ -22,7 +22,7 @@
       >
         <div>
           <a
-            href="{{ url('/projects/technology')}}"
+            href="{{ url('/about')}}"
             class="transition-color relative text-tiny font-medium uppercase tracking-widest text-red-700 dark:text-red-300 duration-300 ease-in-out hover:text-red-600 dark:hover:text-red-200"
           >
             {{__($article['category'])}}
@@ -31,7 +31,7 @@
           <h3
             class="mt-2.5 text-xl font-medium leading-tight text-gray-900 dark:text-gray-100 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline sm:text-2xl lg:text-xl xl:text-2xl"
           >
-            <a href="{{ url('/blog') }}">
+            <a href="{{ url('/about') }}">
               <span class="absolute inset-0" aria-hidden="true"></span>
               {{ $article['title']}}
             </a>
@@ -48,12 +48,7 @@
         <footer class="flex items-center sm:mt-2">
           <div class="flex items-center text-sm lg:text-[15px]">
             <x-icons.calendar />
-            <span class="ml-1 text-gray-500">Nov 2, 2020</span>
-
-            <span class="hidden items-center sm:flex">
-              <x-icons.clock />
-              <span class="ml-1 text-gray-500">15 min read</span>
-            </span>
+            
           </div>
         </footer>
       </div>

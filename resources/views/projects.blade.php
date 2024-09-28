@@ -2,7 +2,7 @@
     $categoryKey = Route::current()->parameter('category');
     $categoryList = config('info.navlinks');
     if (!$categoryKey) {
-       $categoryKey = 'technology';
+       $categoryKey = 'projects';
     }
     $column = array_column($categoryList, 'id');
     $categoryId = array_search($categoryKey, $column);
@@ -69,9 +69,7 @@
                   </a>
                 </span>
 
-                <span class="text-gray-400">
-                  <x-icons.chevron-right />
-                </span>
+                
 
                 <span class="text-red-700 dark:text-red-300">{{ __($category['name']) }}</span>
               </nav>
@@ -111,13 +109,14 @@
                 <article class="flex space-x-4 sm:space-x-6 lg:space-x-4">
                   <!-- Image -->
                   <a
-                    href="{{ url('/home' . $sideindex) }}"
+                    href="{{ url('/about' . $sideindex) }}"
                     class="group relative z-10 animate-pulse overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900"
                   >
-                    <img
-                      data-src="{{asset($sidearticle['image'])}}"
-                      class="lazy h-24 w-24 rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110 sm:h-28 sm:w-28 lg:h-20 lg:w-20 xl:h-24 xl:w-24"
-                    />
+                <img
+                          data-src="{{ asset('' . $sidearticle['image']) }}"
+                          class="lazy h-24 w-24 rounded-2xl object-cover object-center opacity-0 transition duration-300 ease-in-out group-hover:scale-110 sm:h-28 sm:w-28 lg:h-20 lg:w-20 xl:h-24 xl:w-24"
+                  />
+
                   </a>
 
                   <!-- Content -->
