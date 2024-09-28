@@ -79,7 +79,26 @@
             </figure>
             
             <ul>
-              
+                <!-- Content -->
+                <div class="mt-5 text-left sm:ml-6 sm:mt-0">
+                    <div class="flex items-center justify-between">
+                      <div class="'flex flex-col">
+                        <p class="text-xs uppercase tracking-widest text-red-600">
+                            {{ __('About Author') }}
+                        </p>
+                        <h1
+                          class="mt-1 text-xl font-medium tracking-normal text-gray-900 md:tracking-tight lg:leading-tight"
+                        >
+                          {{ __(config('info.sitename'))}}
+                        </h1>
+                      </div>
+                    </div>
+
+                    <p class="mt-2.5 text-base leading-loose text-gray-500">
+                    Energetic and ambitious engineering student with a passion for innovation and problem-solving. Currently pursuing a Bachelor of Technology degree in Computer Science and Engineering with a
+focus on DATA SCIENCE. Ability to collaborate effectively in team environments and adapt to new
+challenges. Eager to leverage academic knowledge and hands-on experience to contribute to real- world engineering projects and drive meaningful impact. 
+                  </p>
             </ul>
             
             

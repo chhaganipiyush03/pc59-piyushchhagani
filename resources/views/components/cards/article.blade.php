@@ -28,7 +28,7 @@ class="py-8 sm:flex lg:flex-col xl:flex-row xl:items-center"
     {{ __($article['category']) }}
     </a>
 
-    <a href="{{ url('/about' . $id) }}">
+    <a href="{{ url('/about' .$id) }}">
     <h3
         class="mt-2 text-xl font-medium leading-normal tracking-normal text-gray-900 dark:text-gray-100 decoration-gray-800 decoration-2 transition duration-300 ease-in-out hover:underline"
     >

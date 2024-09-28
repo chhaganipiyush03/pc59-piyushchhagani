@@ -2,7 +2,7 @@
     <x-slot:title>Contact</x-slot>
 
     <div class="container mx-auto p-6">
-        <h1 class="text-2xl font-bold mb-4">{{ __('Contact Me At') }}</h1>
+        <h1 class="text-2xl font-bold mb-4">{{ __('Contact  At') }}</h1>
 
         @if (session('success'))
             <div class="mb-4 p-2 text-green-600">
@@ -10,7 +10,12 @@
             </div>
         @endif
         <p class="mt-4 text-base leading-loose text-gray-600">
-                Email:chhaganipk@rknec.edu
+                Email:chhaganipk@rknec.edu,
+                      chhaganipiyush@gmail.com
+              <p>Phone:   8770565984</p> 
+              <p> Add:SINDHI COLONY,M.L.B. WARD,, SEONI, M.P.</p> 
+             
+             
               </div>
         <ul class="flex items-center space-x-3">
                     @foreach (config('info.sociallinks') as $link)
