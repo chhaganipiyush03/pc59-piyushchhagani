@@ -51,16 +51,8 @@
             
         ],
         'sociallinks' => [
-            [
-                'title' => 'Twitter',
-                'name' => 'icons.twitter',
-                'url' => 'https://x.com/?lang=en',
-            ],
-            [
-                'title' => 'Facebook',
-                'name' => 'icons.facebook',
-                'url' => 'https://facebook.com/',
-            ],
+        
+            
             [
                 'title' => 'Instagram',
                 'name' => 'icons.instagram',
@@ -69,17 +61,18 @@
             [
                 'title' => 'Linkedin',
                 'name' => 'icons.linkedin',
-                'url' => 'https://www.linkedin.com/in/',
+                'url' => 'https://www.linkedin.com/in/piyushchhagani1817131103',
             ],
         ],
         'taglist' => [
             [
-                'id' => 'trends',
-                'name' => 'Trends',
+                'id' => 'education',
+                'name' => 'Education'
+                ,
             ],
             [
-                'id' => 'tips',
-                'name' => 'Tips',
+                'id' => 'skills',
+                'name' => 'Skills',
             ],
             [
                 'id' => 'ideas',
@@ -135,7 +128,7 @@
             [
                 'id' => '1',
                 'title' => 'EXPLORE',
-                'image' => 'images\explore.jpeg',
+                'image' => 'images\photo.jpeg',
                 'description' => ' Dive into a world of possibilities as you explore our diverse offerings. From innovative projects and engaging articles to thought-provoking discussions, there something for everyone. Whether you re seeking inspiration, knowledge, or simply a new adventure, our platform invites you to discover new ideas and connect with a vibrant community. Join us on this journey of exploration, where every click opens the door to new insights and experiences',
                 'category' => 'project',
                 'duration' => '6 mins',
